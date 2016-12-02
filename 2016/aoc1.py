@@ -65,7 +65,8 @@ for i in aoc_list:
         check = [xf[i], yf[i]]
         if check in visited and done == False:
             done = True
-            print("CROSSOVER %d UNITS AWAY!!!!", (xf[i] + yf[i]))
+            print("Crossover Coordinates x:%d y:%d" % (xf[i], yf[i]))
+            print("The first crossover is %d units away." % (xf[i] + yf[i]))
         visited.append([xf[i], yf[i]])
-print("coordinates x: %d y: %d \nyou are %d blocks away \
-from your target." % (x, y, x + y))
+print("Final Coordinates x:%d y:%d" % (x, y))
+print("You are %d blocks away from your target." % (x + y))
