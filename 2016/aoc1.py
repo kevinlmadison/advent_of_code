@@ -62,7 +62,6 @@ for i in aoc_list:
             yf.append(i)
             xf.append(x)
     for i in range(len(xf)):
-        print([xf[i], yf[i]])
         check = [xf[i], yf[i]]
         if check in visited and done == False:
             done = True
