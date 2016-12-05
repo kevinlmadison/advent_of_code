@@ -29,30 +29,30 @@ def part1():
         key = []
         str = []
         fixed = []
+        test = []
         lines += 1
         for i in range(5):
             key.append(line[-7 + i])
         for i in range(len(line[:-12])):
             if line[i] != '-':
                 str.append(line[i])
-        for i in range(len(str)):
+        for i in range(len(str) - 1, 0, -1):
             arr = []
-            if str[i] not in arr:
-                arr.insert(str.count(str[i]),(str.count(str[i]), str[i]))
+            for j in range(len(str)):
+                if str[j] not in arr and str.count(str[j]) == i:
+                    arr.append(str[j])
             if len(arr) > 0:
                 fixed.append(arr)
-            nice += int(line[-11:-8])
-        print(str, "end of str")
+        for i in range(len(fixed)):
+            fixed[i].sort()
+            for j in range(len(fixed[i])):
+                test.append(fixed[i][j])
         print(key, "end of key")
-        print(fixed, "end of fixed")
-    print(nice)
-
-        
-            
-    print(nice)
-
-
-
+        print(test, "end of test")
+        if key[0:4] == test[0:4]:
+            nice += int(line[-11:-8])
+    print("answer: ", nice)
+    
 part1()
 
 def part2():
