@@ -53,9 +53,29 @@ def part1():
             nice += int(line[-11:-8])
     print("answer: ", nice)
     
-part1()
+#part1()
+def alphabet_cycle(letter, keynum):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    s = alphabet.index(letter)
+    for i in range(keynum):
+        if s == 25:
+            s = 0
+        else:
+            s += 1
+    return alphabet[s]
 
 def part2():
     file = open("aoc4.txt")
+    for line in file:
+        new = []
+        key = int(line[-11:-8])
+        for i in range(len(line[:-12])):
+            if line[i] == '-':
+                new.append(' ')
+                continue
+            new.append(alphabet_cycle(line[i],key))
+        new = ''.join(new)
+        if 'north' in new:
+            print(new, key)
 
 part2()
