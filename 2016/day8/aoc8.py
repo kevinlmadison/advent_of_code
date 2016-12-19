@@ -1,11 +1,12 @@
 import re
+
+
 def main(file):
 
     grid = [
             [0 for _ in range(50)]
             for _ in range(6)
             ]
-    print(grid)
     for line in file:
         m = re.match(r'rect (\d+)x(\d+)', line)
         if m:
@@ -19,11 +20,17 @@ def main(file):
             if coord == 'x':
                 grid = list(map(list, zip(*grid)))
                 grid[row] = grid[row][-num:] + grid[row][:-num]
-            if coord == 'y':
                 grid = list(map(list, zip(*grid)))
-                grid[row]
+            if coord == 'y':
+                grid[row] = grid[row][-num:] + grid[row][:-num]
+
 
     #Part 1
-    return sum(map(sum, grid))
+    print(sum(map(sum, grid)))
+    #Part 2
+    for line in grid:
+        print(''.join('#' if c else ' ' for c in line))
 
-main()
+if __name__ == '__main__':
+    with open('aoc8.txt', 'r') as file:
+        main(file)
