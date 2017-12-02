@@ -11,7 +11,7 @@ def part1(rows):
 def part2(rows):
     sum = 0
     for line in rows:
-        line = [x//y for x in line for y in line if (x != y and x%y == 0)]
+        line = [x//y for x in line for y in line if (x != y and not x%y)]
         sum += line[0]
     print(str(sum))
 
