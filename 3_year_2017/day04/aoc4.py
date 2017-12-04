@@ -6,6 +6,7 @@ def part2(f):
     w = [[''.join(sorted(i)) for i in line.split()] for line in f]
     print(str(sum((1 if len(x) == len(set(x)) else 0) for x in w)))
 
+# Dat butter 
 
 def main():
     f = open('input.txt')
