@@ -1,3 +1,5 @@
+from treenode import TreeNode
+
 def part1(lines):
     children = set()
     parents = set()
@@ -8,7 +10,7 @@ def part1(lines):
         if len(x) > 2:
             children.update(x[3:])
     print([p for p in parents if p not in children])
-
+'''
 class TreeNode:
 
     def __init__(self, name=None, weight=None, total_weight=None):
@@ -31,7 +33,7 @@ class TreeNode:
     def __repr__(self):
         return "{} : {} : {}".format(self.name, str(self.weight), \
                 [repr(x) for x in self.children if len(self.children) > 0])
-
+'''
 
 def part2(lines):
 
