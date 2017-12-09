@@ -1,7 +1,6 @@
 from collections import defaultdict
 import operator
 
-
 def solve(lines):
 
     ops = {
