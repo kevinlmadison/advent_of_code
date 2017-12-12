@@ -2,9 +2,8 @@ from collections import defaultdict, deque
 
 def solve(lines):
 
-    visited = list()
-    groups = 0
     d = defaultdict(list)
+
     for line in lines:
         d[int(line[0])] = [int(x) for x in line[2:]]
 
@@ -29,6 +28,9 @@ def solve(lines):
     best first searches starting from nodes we have not yet visited.
     '''
 
+    visited = list()
+    groups = 0
+
     for i in range(len(lines)):
         if i not in visited:
             visited.extend(bfs(i))
@@ -39,8 +41,7 @@ def solve(lines):
 
 def main():
     f = open('input.txt').readlines()
-    '''No need for regex here.'''
-    f = [x.replace(',','').split() for x in f]
+    f = [x.replace(',','').split() for x in f]  # No need for regex yet again.
     solve(f)
 
 if __name__ == '__main__':
