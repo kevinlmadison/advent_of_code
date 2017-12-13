@@ -39,6 +39,10 @@ def solve(lines):
             print('part 1: {}'.format(len(visited)))
     print('part 2: {}'.format(groups))
 
+    '''Ultimately I should have used dfs for speed purposes because getting the
+    deque syntax right in a hurry without having used it much was a pain.
+    '''
+
 def main():
     f = open('input.txt').readlines()
     f = [x.replace(',','').split() for x in f]  # No need for regex yet again.
