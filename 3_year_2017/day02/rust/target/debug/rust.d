@@ -1,0 +1,1 @@
+/home/kelevra/repos/advent_of_code/3_year_2017/day02/rust/target/debug/rust: /home/kelevra/repos/advent_of_code/3_year_2017/day02/rust/src/../input.txt /home/kelevra/repos/advent_of_code/3_year_2017/day02/rust/src/main.rs
