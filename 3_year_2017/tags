@@ -1,0 +1,85 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+GARBAGE	day09/aoc9.cpp	/^    NONE, GARBAGE, IGNORE,$/;"	e	enum:State	file:
+IGNORE	day09/aoc9.cpp	/^    NONE, GARBAGE, IGNORE,$/;"	e	enum:State	file:
+NONE	day09/aoc9.cpp	/^    NONE, GARBAGE, IGNORE,$/;"	e	enum:State	file:
+State	day09/aoc9.cpp	/^enum State {$/;"	g	file:
+TreeNode	day07/treenode.py	/^class TreeNode:$/;"	c
+__init__	day07/treenode.py	/^    def __init__(self, name=None, weight=None, total_weight=None):$/;"	m	class:TreeNode
+__repr__	day07/treenode.py	/^    def __repr__(self):$/;"	m	class:TreeNode	file:
+bfs	day12/aoc12.py	/^    def bfs(seed):$/;"	f	function:solve
+bit_grid	day14/aoc14.py	/^    def bit_grid(sd):$/;"	f	function:solve
+check_weights	day07/aoc7.py	/^    def check_weights(tree_node):$/;"	f	function:part2
+count_bits	day14/aoc14.py	/^def count_bits(num):$/;"	f
+fill_tree	day07/aoc7.py	/^    def fill_tree(node_name):$/;"	f	function:part2
+flood_dfs	day14/aoc14.py	/^    def flood_dfs(i, j):$/;"	f	function:solve
+gen	day18/aoc18.py	/^    def gen(ID, rq, sq):$/;"	f	function:solve2
+genA	day15/aoc15.py	/^    def genA(a):$/;"	f	function:solve2
+genB	day15/aoc15.py	/^    def genB(b):$/;"	f	function:solve2
+get_total	day07/treenode.py	/^    def get_total(self):$/;"	m	class:TreeNode
+get_weight	day07/treenode.py	/^    def get_weight(self):$/;"	m	class:TreeNode
+knot_hash	day14/aoc14.py	/^def knot_hash(s):$/;"	f
+main	day01/aoc1.py	/^def main():$/;"	f
+main	day01/sol.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	day02/aoc2.py	/^def main():$/;"	f
+main	day03/aoc3.py	/^def main():$/;"	f
+main	day04/aoc4.py	/^def main():$/;"	f
+main	day05/aoc5.py	/^def main():$/;"	f
+main	day06/aoc6.py	/^def main():$/;"	f
+main	day07/aoc7.py	/^def main():$/;"	f
+main	day08/aoc8.py	/^def main():$/;"	f
+main	day09/aoc9.cpp	/^int main(int argc, char ** argv) {$/;"	f
+main	day09/aoc9.py	/^def main():$/;"	f
+main	day10/aoc10.py	/^def main():$/;"	f
+main	day11/aoc11.py	/^def main():$/;"	f
+main	day12/aoc12.py	/^def main():$/;"	f
+main	day13/aoc13.py	/^def main():$/;"	f
+main	day14/aoc14.py	/^def main():$/;"	f
+main	day15/aoc15.py	/^def main():$/;"	f
+main	day16/aoc16.py	/^def main():$/;"	f
+main	day17/aoc17.py	/^def main():$/;"	f
+main	day18/aoc18.py	/^def main():$/;"	f
+main	day19/aoc13.py	/^def main():$/;"	f
+main	day20/aoc13.py	/^def main():$/;"	f
+main	day21/aoc13.py	/^def main():$/;"	f
+main	day22/aoc13.py	/^def main():$/;"	f
+main	day23/aoc13.py	/^def main():$/;"	f
+main	day24/aoc13.py	/^def main():$/;"	f
+main	day25/aoc13.py	/^def main():$/;"	f
+main	reader.py	/^def main():$/;"	f
+part1	day01/aoc1.py	/^def part1(nums):$/;"	f
+part1	day02/aoc2.py	/^def part1(rows):$/;"	f
+part1	day03/aoc3.py	/^def part1(n):$/;"	f
+part1	day04/aoc4.py	/^def part1(f):$/;"	f
+part1	day05/aoc5.py	/^def part1(nums):$/;"	f
+part1	day06/aoc6.py	/^def part1(nums):$/;"	f
+part1	day07/aoc7.py	/^def part1(lines):$/;"	f
+part1	day10/aoc10.py	/^def part1(lengths):$/;"	f
+part2	day01/aoc1.py	/^def part2(nums):$/;"	f
+part2	day02/aoc2.py	/^def part2(rows):$/;"	f
+part2	day03/aoc3.py	/^def part2(n):$/;"	f
+part2	day04/aoc4.py	/^def part2(f):$/;"	f
+part2	day05/aoc5.py	/^def part2(nums):$/;"	f
+part2	day06/aoc6.py	/^def part2(nums):$/;"	f
+part2	day07/aoc7.py	/^def part2(lines):$/;"	f
+part2	day10/aoc10.py	/^def part2(lengths):$/;"	f
+rotate	day03/aoc3.py	/^def rotate(A):$/;"	f
+scan	day13/aoc13.py	/^    def scan(height, time):$/;"	f	function:solve
+set_total	day07/treenode.py	/^    def set_total(self):$/;"	m	class:TreeNode
+solve	day08/aoc8.py	/^def solve(lines):$/;"	f
+solve	day09/aoc9.py	/^def solve(stream):$/;"	f
+solve	day11/aoc11.py	/^def solve(steps):$/;"	f
+solve	day12/aoc12.py	/^def solve(lines):$/;"	f
+solve	day13/aoc13.py	/^def solve(lines):$/;"	f
+solve	day14/aoc14.py	/^def solve(seed):$/;"	f
+solve	day16/aoc16.py	/^def solve(moves):$/;"	f
+solve	day17/aoc17.py	/^def solve(s):$/;"	f
+solve	day18/aoc18.py	/^def solve(ins):$/;"	f
+solve	day19/aoc13.py	/^def solve(lines):$/;"	f
+solve1	day15/aoc15.py	/^def solve1(a, b):$/;"	f
+solve2	day15/aoc15.py	/^def solve2(a, b):$/;"	f
+solve2	day18/aoc18.py	/^def solve2(ins):$/;"	f
