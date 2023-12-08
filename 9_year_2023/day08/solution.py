@@ -23,6 +23,15 @@ def cmp(ha: str, hb: str) -> int:
             return -1
     return 0
 
+def sort_hand(a: str, b: str) -> int:
+    c = ["J", "2", "3", "4", "5", "6", "7", "8", "9", "T", "Q", "K", "A"]
+    if c.index(a) > c.index(b):
+        return 1
+    elif c.index(a) < c.index(b):
+        return -1
+    else:
+        return 0
+
 
 def replace_j(s: str, c: str):
     return "".join([c if x == 'J' else x for x in s])
@@ -48,6 +57,9 @@ def cmp2(ha: str, hb: str) -> int:
     va.sort(reverse=True), vb.sort(reverse=True)
     va, vb = tuple(va), tuple(vb)
 
+    # print(f'va: {va}, vb: {vb}')
+    # print(f'na: {na}, nb: {nb}')
+    
     if p.index(va) > p.index(vb):
         return 1
     elif p.index(va) < p.index(vb):
