@@ -1,4 +1,5 @@
 import re
+import math
 
 
 def part1(f):
@@ -48,20 +49,25 @@ def part2(f):
 
     count = 0
     start = [x for x in maps.keys() if x[2] == 'A']
-    z = [x for x in maps.keys() if x[2] == 'Z']
-    print(z)
-    for i in cycle():
-        for s in start:
-            start[start.index(s)] = maps[s][i]
-        count += 1
-        if all([s[2] == 'Z' for s in start]):
-            return count
-    return count
+    multi = []
+    # z = [x for x in maps.keys() if x[2] == 'Z']
+    # print(z)
+    for s in start:
+        j = s
+        for i in cycle():
+            j = maps[j][i]
+            count += 1
+            if j[2] == 'Z':
+                multi.append(count)
+                count = 0
+                break
+            
+    return math.lcm(*multi)
 
 
 def main():
     # inputs_1 = open('input').read()
-    inputs_2 = open('test_input_2').read()
+    inputs_2 = open('input').read()
     # print(f'part 1: {part1(inputs_1)}')
     print(f'part 2: {part2(inputs_2)}')
 
